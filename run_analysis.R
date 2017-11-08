@@ -34,7 +34,7 @@ subject_train <- read.table("./UCI HAR Dataset/train/subject_train.txt")
 names(X_train) <- features
 
 # Extract only the measurements on the mean and standard deviation for each measurement using logical vector.
-X_train <- X_train[,extract_features]
+X_train <- X_train[,extracted_features]
 
 # Load activity data
 y_train[,2] <- activity_labels[y_train[,1]]
